@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pantry App Contributions</title>
+
+    <style>
+      h1,
+      h2 {
+        font-weight: bold;
+      }
+      body {
+        display: grid;
+        place-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .container {
+        text-align: center;
+      }
+      .contri-container {
+        text-align: start;
+      }
+      ul {
+        counter-reset: list-counter;
+        list-style-type: none;
+        padding: 0;
+      }
+
+      ul li {
+        margin-bottom: 10px;
+      }
+
+      li::before {
+        counter-increment: list-counter;
+        content: counter(list-counter) ".";
+        margin-right: 0.5em;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Pantry App Contributions</h1>
+
+      <h2>Highlight: Created a full-stack application for Pantry</h2>
+      <p>
+        Check out the
+        <a href="https://github.com/ChicoState/PantryNode/tree/PantryNode"
+          >PantryNode</a
+        >
+        branch for the full-stack application implementation.
+      </p>
+
+      <div class="contri-container">
+        <h2>Some contributations merged in main branch</h2>
+        <ul>
+          <li>
+            Added initial Docker support for PantryNode. (<a
+              href="https://github.com/ChicoState/PantryNode/pull/34"
+              >Pull Request #34</a
+            >,
+            <a href="https://github.com/ChicoState/PantryNode/pull/43"
+              >Pull Request #43</a
+            >)
+          </li>
+          <li>
+            Closed issueDeprecationWarning & mongoErrorContextSymbol errors when
+            starting project on Mac. (<a
+              href="https://github.com/ChicoState/PantryNode/issues/26"
+              >Issue #26</a
+            >)
+          </li>
+          <li>
+            Supported to setup the testing infrastructure. (<a
+              href="https://github.com/ChicoState/PantryNode/pull/75"
+              >Pull Request #75</a
+            >)
+          </li>
+          <li>
+            Solved
+            <a href="https://github.com/ChicoState/PantryNode/issues/139"
+              >Issue #139</a
+            >
+            in branch
+            <a href="https://github.com/ChicoState/PantryNode/tree/docker-fix"
+              >docker-fix</a
+            >.
+          </li>
+          <li>
+            Reviewed
+            <a href="https://github.com/ChicoState/PantryNode/pull/186"
+              >Pull Request #186</a
+            >.
+          </li>
+          <li>
+            Reviewed
+            <a href="https://github.com/ChicoState/PantryNode/pull/219"
+              >Pull Request #219</a
+            >.
+          </li>
+          <li>
+            Reviewed
+            <a href="https://github.com/ChicoState/PantryNode/pull/225"
+              >Pull Request #225</a
+            >.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
